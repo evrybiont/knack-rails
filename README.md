@@ -20,11 +20,20 @@ Or install it yourself as:
 
 ## Usage
 
-Add below line into app/assets/javascripts/application.js
+Add js library into app/assets/javascripts/application.js
 
 ```ruby
 //= require knack-rails
 ```
+
+Include sass file into your stylesheets/application.scss
+
+```ruby
+@import 'knack';
+```
+
+How to use see [here](https://github.com/evrybiont/knack)
+
 
 ## License
 
