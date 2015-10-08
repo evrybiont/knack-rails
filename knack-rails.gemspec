@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'knack/rails/version'
+require 'knack-rails/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "knack-rails"
-  spec.version       = Knack::Rails::VERSION
+  spec.version       = KnackRails::VERSION
   spec.authors       = ["evrybiont"]
   spec.email         = ["evrybiont@gmail.com"]
 
