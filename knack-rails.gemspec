@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Jquery plugin}
   spec.description   = %q{Image Gallery}
-  spec.homepage      = "https://github.com/evrybiont/knack"
+  spec.homepage      = "https://github.com/evrybiont/knack-rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
