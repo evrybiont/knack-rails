@@ -42,6 +42,7 @@
     fadeOut: function(){
       clearTimeout(fullScreen.timeout);
       fullScreen.active = false;
+      $('.menu-area').toggleClass('established');
       $('#projector').unbind('mousemove');
       $('.menu-area').unbind();
       $('.menu-area').show();
@@ -60,6 +61,7 @@
 
     fadeIn: function(){
       fullScreen.active = true;
+      $('.menu-area').toggleClass('established');
       $('.fullscreen').bind('click', fullScreen.exit);
       $('.stage-area').dblclick(fullScreen.exit);
       $('.menu-area').hide();
@@ -365,11 +367,12 @@
     prepareProjector: function(){
       attrScope.init();
 
-      $('#'+ _settings.id).append('<div class="thumbs-area"><div class="thumbs-box">');
-      $('#'+ _settings.id).append('<div class="stage-area">');
-      $('#'+ _settings.id).append('<div class="arrows-area">');
-      $('#'+ _settings.id).append('<div class="loader">');
-      $('#'+ _settings.id).append('<div class="menu-area">');
+      $('#'+ _settings.id).append('<div class="embed-container">');
+      $('.embed-container').append('<div class="thumbs-area"><div class="thumbs-box">');
+      $('.embed-container').append('<div class="stage-area">');
+      $('.embed-container').append('<div class="loader">');
+      $('.embed-container').append('<div class="arrows-area">');
+      $('.embed-container').append('<div class="menu-area">');
 
       loader.show();
     },

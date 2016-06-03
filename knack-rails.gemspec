@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["evrybiont@gmail.com"]
 
   spec.summary       = %q{Jquery plugin}
-  spec.description   = %q{Image Gallery}
+  spec.description   = %q{Responsive Image Gallery}
   spec.homepage      = "https://github.com/evrybiont/knack-rails"
   spec.license       = "MIT"
 
